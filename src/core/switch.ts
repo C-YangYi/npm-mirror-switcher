@@ -149,7 +149,7 @@ export function switchPackageManager(context: vscode.ExtensionContext) {
 
             // ⭐ 实时更新状态栏
             updateStatusBar(statusBarItem, mirrorKey.value);
-            vscode.window.showInformationMessage(`切换镜像成功，当前镜像地址：${mirrorKey.value}`);
+            vscode.window.showInformationMessage(`切换成功，镜像地址：${mirrorKey.value}`);
         } catch (error) {
             vscode.window.showErrorMessage(`切换镜像失败，请确认已安装${packageManager}`);
         }

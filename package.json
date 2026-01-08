@@ -2,7 +2,7 @@
   "name": "npm-mirror-switcher",
   "displayName": "npm mirror switcher",
   "description": "Switch npm registry to Aliyun mirror",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "CoderYC",
   "engines": {
     "vscode": "^1.81.0"
