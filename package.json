@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<你的用户名>/<仓库名>.git"
+    "url": "https://github.com/C-YangYi/npm-mirror-switcher.git"
   },
   "categories": [
     "Other"
