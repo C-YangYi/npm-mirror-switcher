@@ -1,0 +1,48 @@
+{
+  "name": "npm-mirror-switcher",
+  "displayName": "npm mirror switcher",
+  "description": "Switch npm registry to Aliyun mirror",
+  "version": "0.0.1",
+  "publisher": "CoderYC",
+  "engines": {
+    "vscode": "^1.81.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/<你的用户名>/<仓库名>.git"
+  },
+  "categories": [
+    "Other"
+  ],
+  "icon": "icons/npm.png",
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "npmMirror.switch",
+        "title": "切换npm镜像为阿里云镜像"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "pnpm run compile && pnpm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.81.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "typescript-eslint": "^8.48.1",
+    "eslint": "^9.39.1",
+    "typescript": "^5.9.3",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
